@@ -3,9 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/* Создание класса в котором будет хранится весь перечень людей
-    и различные методы для работы с этим деревом
-    */
+
 public class FamilyTree implements Serializable {
     List<Human> familyTree;
 
@@ -17,7 +15,7 @@ public class FamilyTree implements Serializable {
         this.familyTree = new ArrayList<Human>();
     }
 
-    // Добавить новый объект Human в лист дерева
+    
     public void add(Human human) {
         if (!familyTree.contains(human)) {
             this.familyTree.add(human);
@@ -26,7 +24,7 @@ public class FamilyTree implements Serializable {
         }
     }
 
-    // Поиск человека по Фамилии в дереве
+    
     public List<Human> searchHuman(String lastName) {
         List<Human> searchTemp = new ArrayList<>();
         for (Human item : familyTree) {
