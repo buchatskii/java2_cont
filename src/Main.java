@@ -13,7 +13,7 @@ public class Main {
 
         FamilyTree testTwo = new FamilyTree();
 
-        //  Проверка сериализации
+        
         String nameFile = "FamList";
         SerO.saveFile(testOne,nameFile);
         testTwo = SerO.loadFile(nameFile);
